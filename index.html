@@ -1,15 +1,33 @@
 <html>
+<!DOCTYPE html>
+<html lang="en">
 
 <head>
-	<title>Parcel Sandbox</title>
-	<meta charset="UTF-8" />
-	<script src="https://d3js.org/d3.v4.js"></script>
+	<meta charset="UTF-8">
+	<title>Egghead D3 v4</title>
+	<script src="//d3js.org/d3.v4.min.js"></script>
+	<style>
+		.chart {
+			background: lightgray;
+			border: 1px solid black;
+		}
+
+		rect {
+			fill: steelblue;
+		}
+	</style>
 </head>
 
 <body>
-	<div id="app"></div>
+
+	<div class="chart"></div>
 
 	<script src="src/index.js"></script>
+	
+	<button onclick="render('math')">Math</button>
+	<button onclick="render('science')">Science</button>
+	<button onclick="render('language')">Language</button>
+
 </body>
 
 </html>
